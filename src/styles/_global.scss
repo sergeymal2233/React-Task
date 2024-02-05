@@ -31,6 +31,11 @@ input:focus {
 
 a {
   width: fit-content;
+  text-decoration: none;
+
+  &:active {
+    color: inherit;
+  }
 }
 
 ul {
