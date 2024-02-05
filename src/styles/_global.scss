@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--regular-text-color);
+    padding: 20px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  button,
+  input,
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  a {
+    width: fit-content;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    cursor: pointer;
+  }
