@@ -8,6 +8,8 @@ import Loader from '@/components/UI/Loader'
 import Typography from '@/components/UI/Typography'
 import UserSummary from '@/components/UserSummary'
 import NotFoundUser from '@/components/NotFoundUser'
+import UsedTechnologies from '@/components/UsedTechnologies'
+import EditedRepositories from '@/components/EditedRepositories'
 
 const Resume = () => {
   const { username } = useParams()
@@ -29,6 +31,10 @@ const Resume = () => {
           <PageSection title='Summary'>
             <UserSummary user={user} />
           </PageSection>
+
+          {user && <UsedTechnologies username={username as string} />}
+
+          {user && <EditedRepositories username={username as string} />}
         </>
       )}
 
