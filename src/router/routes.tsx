@@ -1,3 +1,4 @@
+import ValidateUsername from '@/components/HOC/ValidateUsername'
 import Home from '@/pages/Home'
 import Resume from '@/pages/Resume'
 
@@ -15,6 +16,6 @@ export const routes: Route[] = [
   {
     path: '/:username',
     params: { username: ':username' },
-    element: <Resume />,
+    element: <ValidateUsername Component={Resume} />,
   },
 ]
